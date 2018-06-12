@@ -8,12 +8,12 @@ if (isset($_POST['submit'])){
   $message = $POST['message'];
 
 
-  $mailTo = "@gmail";
+  $mailTo = "dan@sledro.com";
   $headers = "From: " .$mailFrom;
   $txt = "You recieved a message from".$name."\n\n".$message;
 
   mail($mailTo, $subject, $txt, $headers);
-  header("Location: index.php?mailsend");
+  header("Location: index.html?mailsend");
 }
 
 ?>
